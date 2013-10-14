@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
+<meta name="description" content="JavaScript desktop environment built with jQuery." />
+<title>jQuery Desktop</title>
+<!--[if lt IE 7]>
+<script>
+window.top.location = 'http://desktop.sonspring.com/ie.html';
+</script>
+<![endif]-->
+<link rel="stylesheet" href="assets/css/reset.css" />
+<link rel="stylesheet" href="assets/css/desktop.css" />
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="assets/css/ie.css" />
+<![endif]-->
+
+</head>
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"><script/>
+<script>
+    $(function(){
+        $("div").click(function(){
+            alert('xxx');
+            var div=$("#bar_top");
+            div.animate({height:'300px',opacity:'0.4'},"slow");
+        });
+    });
+</script>
+<div class="abs" id="wrapper">
+  <div class="abs" id="desktop">
+    <a class="abs icon" style="left:20px;top:10px;" href="#icon_dock_computer">
+      <img src="assets/images/icons/icon_32_computer.png" />
+      Müraciətçilər
+    </a>
+    <a class="abs icon" style="left:20px;top:90px;" href="#icon_dock_member">
+      <img src="assets/images/icons/icon_42_member.png" />
+      Üzvlər
+    </a>
+    <a class="abs icon" style="left:20px;top:170px;" href="#icon_dock_finance">
+        <img src="assets/images/icons/icon_42_finance.png" />
+        Maliyyə
+    </a>
+    <a class="abs icon" style="left:20px;top:250px;" href="#icon_dock_disc">
+      <img src="assets/images/icons/icon_32_disc.png" />
+      Tərəfdaşlar
+    </a>
+    <a class="abs icon" style="left:20px;top:330px;" href="#icon_dock_network">
+      <img src="assets/images/icons/icon_32_network.png" />
+      Tədbirlər
+    </a>
+    <a class="abs icon" style="left:20px;top:410px;" href="#icon_dock_document">
+        <img src="assets/images/icons/icon_42_document.png" />
+        Giriş/Çıxış Sənədləri
+    </a>
+    <a class="abs icon" style="left:20px;top:490px;" href="#icon_dock_employee">
+        <img src="assets/images/icons/icon_36_employee.png" />
+        Əməkdaşlar
+    </a>
+    <a class="abs icon" style="left:110px;top:10px;" href="#icon_dock_organization">
+        <img src="assets/images/icons/icon_42_organization.png" />
+        Təşkilatı struktur
+    </a>
+    <a class="abs icon" style="left:110px;top:90px;" href="#icon_dock_activeUser">
+        <img src="assets/images/icons/icon_42_activeUser.png" />
+        Aktiv istifadəçilər
+    </a>
+    <a class="abs icon" style="left:110px;top:170px;" href="#icon_dock_archive">
+        <img src="assets/images/icons/icon_42_archive.png" />
+        Arxiv
+    </a>
+    <a class="abs icon" style="left:110px;top:250px;" href="#icon_dock_report">
+        <img src="assets/images/icons/icon_42_report.png" />
+        Hesabatlar
+    </a>
+    <div id="window_computer" class="abs window">
+      <div class="abs window_inner">
+        <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_computer.png" />
+            Müraciətçilər
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize" style="display: none"></a>
+            <a href="#icon_dock_computer" class="window_close"></a>
+          </span>
+        </div>
+        <div class="abs window_content">
+          <div class="window_aside">
+            Hello. You look nice today!
+          </div>
+          <div class="window_main">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th class="shrink">
+                    &nbsp;
+                  </th>
+                  <th>
+                    Name
+                  </th>
+                  <th>
+                    Date Modified
+                  </th>
+                  <th>
+                    Date Created
+                  </th>
+                  <th>
+                    Size
+                  </th>
+                  <th>
+                    Kind
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_member.png" />
+                  </td>
+                  <td>
+                    Hard Drive
+                  </td>
+                  <td>
+                    Today
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    200 GB
+                  </td>
+                  <td>
+                    Volume
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_disc.png" />
+                  </td>
+                  <td>
+                    Audio CD
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    2.92 GB
+                  </td>
+                  <td>
+                    Media
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_network.png" />
+                  </td>
+                  <td>
+                    Network
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    LAN
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_folder_remote.png" />
+                  </td>
+                  <td>
+                    Shared Project Files
+                  </td>
+                  <td>
+                    Yesterday
+                  </td>
+                  <td>
+                    12/29/08
+                  </td>
+                  <td>
+                    524 MB
+                  </td>
+                  <td>
+                    Folder
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_documents.png" />
+                  </td>
+                  <td>
+                    Documents
+                  </td>
+                  <td>
+                    Yesterday
+                  </td>
+                  <td>
+                    12/29/08
+                  </td>
+                  <td>
+                    524 MB
+                  </td>
+                  <td>
+                    Folder
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_system.png" />
+                  </td>
+                  <td>
+                    Preferences
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    System
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_trash.png" />
+                  </td>
+                  <td>
+                    Trash
+                  </td>
+                  <td>
+                    Today
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    Bin
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="abs window_bottom">
+          Build: TK421
+        </div>
+      </div>
+    </div>
+    <div id="window_member" class="abs window">
+      <div class="abs window_inner">
+        <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_member.png" />
+            Üzvlər
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize" style="display: none">></a>
+            <a href="#icon_dock_member" class="window_close"></a>
+          </span>
+        </div>
+        <div class="abs window_content">
+          <div class="window_aside">
+            Storage in use: 119.1 GB
+          </div>
+          <div class="window_main">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th class="shrink">
+                    &nbsp;
+                  </th>
+                  <th>
+                    Name
+                  </th>
+                  <th>
+                    Date Modified
+                  </th>
+                  <th>
+                    Date Created
+                  </th>
+                  <th>
+                    Size
+                  </th>
+                  <th>
+                    Kind
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_page.png" />
+                  </td>
+                  <td>
+                    .DS_Store
+                  </td>
+                  <td>
+                    Yesterday
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    6 KB
+                  </td>
+                  <td>
+                    Hidden
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_folder_home.png" />
+                  </td>
+                  <td>
+                    Default User
+                  </td>
+                  <td>
+                    Today
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    Folder
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_folder.png" />
+                  </td>
+                  <td>
+                    Applications
+                  </td>
+                  <td>
+                    Yesterday
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    Folder
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_folder.png" />
+                  </td>
+                  <td>
+                    Developer
+                  </td>
+                  <td>
+                    12/29/08
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    Folder
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_folder.png" />
+                  </td>
+                  <td>
+                    Library
+                  </td>
+                  <td>
+                    09/11/09
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    Folder
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_folder.png" />
+                  </td>
+                  <td>
+                    System
+                  </td>
+                  <td>
+                    Yesterday
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    &mdash;
+                  </td>
+                  <td>
+                    Folder
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="abs window_bottom">
+          Free: 80.9 GB
+        </div>
+      </div>
+    </div>
+    <div id="window_finance" class="abs window">
+        <div class="abs window_inner">
+            <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_finance.png" />
+            Maliyyə
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize" style="display: none">></a>
+            <a href="#icon_dock_finance" class="window_close"></a>
+          </span>
+            </div>
+            <div class="abs window_content">
+                <div class="window_aside align_center">
+                    <img src="assets/images/misc/album_cover.jpg" />
+                    <br />
+                    <em>Title of Album</em>
+                </div>
+                <div class="window_main">
+
+                </div>
+            </div>
+            <div class="abs window_bottom">
+                Genre: Rock/Rap
+            </div>
+        </div>
+    </div>
+    <div id="window_disc" class="abs window">
+      <div class="abs window_inner">
+        <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_disc.png" />
+            Tərəfdaşlar
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize" style="display: none">></a>
+            <a href="#icon_dock_disc" class="window_close"></a>
+          </span>
+        </div>
+        <div class="abs window_content">
+          <div class="window_aside align_center">
+            <img src="assets/images/misc/album_cover.jpg" />
+            <br />
+            <em>Title of Album</em>
+          </div>
+          <div class="window_main">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th class="shrink">
+                    &nbsp;
+                  </th>
+                  <th class="shrink">
+                    Track
+                  </th>
+                  <th>
+                    Song Name
+                  </th>
+                  <th class="shrink">
+                    Length
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    01
+                  </td>
+                  <td>
+                    Track One
+                  </td>
+                  <td class="align_right">
+                    3:50
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    02
+                  </td>
+                  <td>
+                    Track Two
+                  </td>
+                  <td class="align_right">
+                    3:50
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    03
+                  </td>
+                  <td>
+                    Track Three
+                  </td>
+                  <td class="align_right">
+                    4:02
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    04
+                  </td>
+                  <td>
+                    Track Four
+                  </td>
+                  <td class="align_right">
+                    3:47
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    05
+                  </td>
+                  <td>
+                    Track Five
+                  </td>
+                  <td class="align_right">
+                    4:38
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    06
+                  </td>
+                  <td>
+                    Track Six
+                  </td>
+                  <td class="align_right">
+                    3:16
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    07
+                  </td>
+                  <td>
+                    Track Seven
+                  </td>
+                  <td class="align_right">
+                    3:53
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    08
+                  </td>
+                  <td>
+                    Track Eight
+                  </td>
+                  <td class="align_right">
+                    1:41
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    09
+                  </td>
+                  <td>
+                    Track Nine
+                  </td>
+                  <td class="align_right">
+                    3:40
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    10
+                  </td>
+                  <td>
+                    Track Ten
+                  </td>
+                  <td class="align_right">
+                    4:33
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    11
+                  </td>
+                  <td>
+                    Track Eleven
+                  </td>
+                  <td class="align_right">
+                    3:49
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    12
+                  </td>
+                  <td>
+                    Track Twelve
+                  </td>
+                  <td class="align_right">
+                    1:11
+                  </td>
+                </tr>
+                <tr>
+                  <td class="shrink">
+                    <img src="assets/images/icons/icon_16_music.png" />
+                  </td>
+                  <td class="align_center">
+                    13
+                  </td>
+                  <td>
+                    Track Thirteen
+                  </td>
+                  <td class="align_right">
+                    6:17
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="abs window_bottom">
+          Genre: Rock/Rap
+        </div>
+      </div>
+    </div>
+    <div id="window_network" class="abs window">
+      <div class="abs window_inner">
+        <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_network.png" />
+            Tədbirlər
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize" style="display: none">></a>
+            <a href="#icon_dock_network" class="window_close"></a>
+          </span>
+        </div>
+        <div class="abs window_content">
+          <div class="window_aside">
+            Local Network Resources
+          </div>
+          <div class="window_main">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th class="shrink">
+                    &nbsp;
+                  </th>
+                  <th>
+                    Name
+                  </th>
+                  <th class="shrink">
+                    Operating System
+                  </th>
+                  <th class="shrink">
+                    Version
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_server.png" />
+                  </td>
+                  <td>
+                    Urban Terror - <em>Game Server</em>
+                  </td>
+                  <td>
+                    Linux
+                  </td>
+                  <td>
+                    Ubuntu
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_folder_remote.png" />
+                  </td>
+                  <td>
+                    Shared Project Files
+                  </td>
+                  <td>
+                    Linux
+                  </td>
+                  <td>
+                    Red Hat
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_vpn.png" />
+                  </td>
+                  <td>
+                    Remote Desktop VPN
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    XP
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Michael Scott
+                  </td>
+                  <td>
+                    Mac OS
+                  </td>
+                  <td>
+                    10.5
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Dwight Schrute
+                  </td>
+                  <td>
+                    Mac OS
+                  </td>
+                  <td>
+                    10.6
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Jim Halpert
+                  </td>
+                  <td>
+                    Mac OS
+                  </td>
+                  <td>
+                    10.6
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Pam Beesly
+                  </td>
+                  <td>
+                    Mac OS
+                  </td>
+                  <td>
+                    10.5
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Ryan Howard
+                  </td>
+                  <td>
+                    Mac OS
+                  </td>
+                  <td>
+                    10.5
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Jan Levinson
+                  </td>
+                  <td>
+                    Mac OS
+                  </td>
+                  <td>
+                    10.5
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Roy Anderson
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    7
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Stanley Hudson
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Kevin Malone
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Angela Martin
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Oscar Martinez
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Phyllis Lapin
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Creed Bratton
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    7
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Meredith Palmer
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Toby Flenderson
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Darryl Philbin
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Kelly Kapoor
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="assets/images/icons/icon_16_computer.png" />
+                  </td>
+                  <td>
+                    Andy Bernard
+                  </td>
+                  <td>
+                    Windows
+                  </td>
+                  <td>
+                    Vista
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="abs window_bottom">
+          LAN: Corporate Intranet
+        </div>
+      </div>
+    </div>
+    <div id="window_document" class="abs window">
+        <div class="abs window_inner">
+            <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_document.png" />
+            Giriş/Çıxış Sənədləri
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize" style="display: none">></a>
+            <a href="#icon_dock_document" class="window_close"></a>
+          </span>
+            </div>
+            <div class="abs window_content">
+                <div class="window_aside align_center">
+                    <img src="assets/images/misc/album_cover.jpg" />
+                    <br />
+                    <em>Title of Album</em>
+                </div>
+                <div class="window_main">
+
+                </div>
+            </div>
+            <div class="abs window_bottom">
+                Genre: Rock/Rap
+            </div>
+        </div>
+    </div>
+    <div id="window_employee" class="abs window">
+    <div class="abs window_inner">
+    <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_employee.png" />
+            Əməkdaşlar
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize" style="display: none">></a>
+            <a href="#icon_dock_employee" class="window_close"></a>
+          </span>
+    </div>
+    <div class="abs window_content">
+    <div class="window_aside align_center">
+        <img src="assets/images/misc/album_cover.jpg" />
+        <br />
+        <em>Title of Album</em>
+    </div>
+    <div class="window_main">
+
+    </div>
+    </div>
+    <div class="abs window_bottom">
+        Genre: Rock/Rap
+    </div>
+    </div>
+    </div>
+    <div id="window_organization" class="abs window">
+        <div class="abs window_inner">
+            <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_organization.png" />
+            Təşkilatı struktur
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize" style="display: none">></a>
+            <a href="#icon_dock_organization" class="window_close"></a>
+          </span>
+            </div>
+            <div class="abs window_content">
+                <div class="window_aside align_center">
+                    <img src="assets/images/misc/album_cover.jpg" />
+                    <br />
+                    <em>Title of Album</em>
+                </div>
+                <div class="window_main">
+
+                </div>
+            </div>
+            <div class="abs window_bottom">
+                Genre: Rock/Rap
+            </div>
+        </div>
+    </div>
+    <div id="window_activeUser" class="abs window">
+        <div class="abs window_inner">
+            <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_activeUser.png" />
+            Aktiv istifadəçilər
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize" style="display: none">></a>
+            <a href="#icon_dock_activeUser" class="window_close"></a>
+          </span>
+            </div>
+            <div class="abs window_content">
+                <div class="window_aside align_center">
+                    <img src="assets/images/misc/album_cover.jpg" />
+                    <br />
+                    <em>Title of Album</em>
+                </div>
+                <div class="window_main">
+
+                </div>
+            </div>
+            <div class="abs window_bottom">
+                Genre: Rock/Rap
+            </div>
+        </div>
+    </div>
+    <div id="window_archive" class="abs window">
+        <div class="abs window_inner">
+            <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_archive.png" />
+            Arxiv
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize" style="display: none">></a>
+            <a href="#icon_dock_archive" class="window_close"></a>
+          </span>
+            </div>
+            <div class="abs window_content">
+                <div class="window_aside align_center">
+                    <img src="assets/images/misc/album_cover.jpg" />
+                    <br />
+                    <em>Title of Album</em>
+                </div>
+                <div class="window_main">
+
+                </div>
+            </div>
+            <div class="abs window_bottom">
+                Genre: Rock/Rap
+            </div>
+        </div>
+    </div>
+    <div id="window_report" class="abs window">
+        <div class="abs window_inner">
+            <div class="window_top">
+          <span class="float_left">
+            <img src="assets/images/icons/icon_16_archive.png" />
+            Hesabatlar
+          </span>
+          <span class="float_right">
+            <a href="#" class="window_min"></a>
+            <a href="#" class="window_resize" style="display: none"></a>
+            <a href="#icon_dock_report" class="window_close"></a>
+          </span>
+            </div>
+            <div class="abs window_content">
+                <div class="window_aside align_center">
+                    <img src="assets/images/misc/album_cover.jpg" />
+                    <br />
+                    <em>Title of Album</em>
+                </div>
+                <div class="window_main">
+
+                </div>
+            </div>
+            <div class="abs window_bottom">
+                Genre: Rock/Rap
+            </div>
+        </div>
+    </div>
+  </div>
+  <div id="bar_top_header" style="background-color: #000000; padding-left: 100px !important; padding-right: 100px !important;"></div>
+  <div id="bar_top_inner" style="cursor: pointer !important; ">
+      <div style="cursor: pointer !important; border-radius: 3px; width: 100%; height: 3px; background-color: #0072d8"></div>
+  </div>
+
+  <div class="abs" id="bar_top">
+    <span class="float_right" id="clock"></span>
+    <ul>
+      <li>
+        <a class="menu_trigger" href="#">Modullar</a>
+        <ul class="menu">
+          <li>
+            <a class="iconShortcut" href="#icon_dock_computer"><img src="assets/images/icons/icon_16_computer.png" style="margin-right: 5px; width: 16px;">Müraciətçilər</a>
+          </li>
+          <li>
+              <a class="iconShortcut" href="#icon_dock_member"><img src="assets/images/icons/icon_16_member.png" style="margin-right: 5px; width: 16px;">Üzvlər</a>
+          </li>
+            <li>
+                <a class="iconShortcut" href="#icon_dock_finance"><img src="assets/images/icons/icon_16_finance.png" style="margin-right: 5px; width: 16px;">Maliyyə</a>
+            </li>
+          <li>
+              <a class="iconShortcut" href="#icon_dock_disc"><img src="assets/images/icons/icon_16_disc.png" style="margin-right: 5px; width: 16px;">Tərəfdaşlar</a>
+          </li>
+          <li>
+              <a class="iconShortcut" href="#icon_dock_network"><img src="assets/images/icons/icon_16_network.png" style="margin-right: 5px; width: 16px;">Tədbirlər</a>
+          </li>
+            <li>
+                <a class="iconShortcut" href="#icon_dock_document"><img src="assets/images/icons/icon_16_document.png" style="margin-right: 5px; width: 16px;">Giriş/Çıxış Sənədləri</a>
+            </li>
+          <li>
+              <a class="iconShortcut" href="#icon_dock_employee"><img src="assets/images/icons/icon_16_employee.png" style="margin-right: 5px; width: 16px;">Əməkdaşlar</a>
+          </li>
+          <li>
+              <a class="iconShortcut" href="#icon_dock_organization"><img src="assets/images/icons/icon_16_organization.png" style="margin-right: 5px; width: 16px;">Təşkilatı struktur</a>
+          </li>
+            <li>
+                <a class="iconShortcut" href="#icon_dock_activeUser"><img src="assets/images/icons/icon_16_activeUser.png" style="margin-right: 5px; width: 16px;">Aktiv istifadəçilər</a>
+            </li>
+            <li>
+                <a class="iconShortcut" href="#icon_dock_archive"><img src="assets/images/icons/icon_16_archive.png" style="margin-right: 5px; width: 16px;">Arxiv</a>
+            </li>
+            <li>
+                <a class="iconShortcut" href="#icon_dock_report"><img src="assets/images/icons/icon_16_report.png" style="margin-right: 5px; width: 16px;">Hesabatlar</a>
+            </li>
+        </ul>
+      </li>
+      <li>
+        <a class="menu_trigger" href="#">Tənzimləmələr</a>
+        <ul class="menu">
+          <li>
+            <a href="#">Şifrənizi dəyişin</a>
+          </li>
+          <li>
+            <a href="#">Email notofokasiya   <input type="checkbox" class="common" id="switch1" checked="checked" /></a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+      <div class="float_left" style="width: 50%; height: 100%; text-align: center; color: black;">
+          Bildirişləri aç ↓
+      </div>
+
+      <ul class="float_right">
+          <li>
+              <a class="menu_trigger" href="#">Əhmədov İrkan Əflatun</a>
+              <ul class="menu" style="min-width: 250px">
+                  <li>
+                      <table>
+                          <tr valign="middle">
+                              <td>
+                                  <div style="width: 90px; height: 120px; border: 1px solid #b0b0b0; margin-right: 5px;">
+                                      <img src="assets/images/users/90_120.jpg">
+                                  </div>
+                              </td>
+                              <td align="center">
+                                  <table cellpadding="0" cellspacing="0" style="line-height: 19px;">
+                                      <tr>
+                                          <td>
+                                              Cinsi:
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              Kişi
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              Doğum tarixi:
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              25.09.1989
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              Vəzifə:
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              Aparıcı mütəxəsis
+                                          </td>
+                                      </tr>
+                                  </table>
+                              </td>
+                          </tr>
+                      </table>
+
+                  </li>
+                  <li>
+                      <a href="#">Çıxış</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+  </div>
+  <div class="abs" id="bar_bottom">
+    <a class="float_left" href="#" id="show_desktop" title="Show Desktop">
+      <img src="assets/images/icons/icon_22_desktop.png" />
+    </a>
+    <ul id="dock">
+      <li id="icon_dock_computer">
+        <a href="#window_computer">
+          <img src="assets/images/icons/icon_22_computer.png" />
+          Müraciətçilər
+        </a>
+      </li>
+      <li id="icon_dock_member">
+        <a href="#window_member">
+          <img src="assets/images/icons/icon_22_member.png" />
+          Üzvlər
+        </a>
+      </li>
+        <li id="icon_dock_finance">
+            <a href="#window_finance">
+                <img src="assets/images/icons/icon_22_finance.png" />
+                Maliyyə
+            </a>
+        </li>
+      <li id="icon_dock_disc">
+        <a href="#window_disc">
+          <img src="assets/images/icons/icon_22_disc.png" />
+          Tərəfdaşlar
+        </a>
+      </li>
+      <li id="icon_dock_network">
+        <a href="#window_network">
+          <img src="assets/images/icons/icon_22_network.png" />
+          Tədbirlər
+        </a>
+      </li>
+        <li id="icon_dock_document">
+            <a href="#window_document">
+                <img src="assets/images/icons/icon_22_document.png" />
+                Giriş/Çıxış Sənədləri
+            </a>
+        </li>
+        <li id="icon_dock_employee">
+            <a href="#window_employee">
+                <img src="assets/images/icons/icon_22_employee.png" />
+                Əməkdaşlar
+            </a>
+        </li>
+        <li id="icon_dock_organization">
+            <a href="#window_organization">
+                <img src="assets/images/icons/icon_22_organization.png" />
+                Təşkilatı struktur
+            </a>
+        </li>
+        <li id="icon_dock_activeUser">
+            <a href="#window_activeUser">
+                <img src="assets/images/icons/icon_22_activeUser.png" />
+                Aktiv istifadəçilər
+            </a>
+        </li>
+        <li id="icon_dock_archive">
+            <a href="#window_archive">
+                <img src="assets/images/icons/icon_22_archive.png" />
+                Arxiv
+            </a>
+        </li>
+        <li id="icon_dock_report">
+            <a href="#window_report">
+                <img src="assets/images/icons/icon_22_report.png" />
+                Hesabatlar
+            </a>
+        </li>
+    </ul>
+    <a class="float_right" href="#" title="Secure Hosting">
+      <img src="assets/images/misc/firehost.png" />
+    </a>
+  </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script>
+  !window.jQuery && document.write(unescape('%3Cscript src="assets/js/jquery.js"%3E%3C/script%3E'));
+  !window.jQuery.ui && document.write(unescape('%3Cscript src="assets/js/jquery.ui.js"%3E%3C/script%3E'));
+</script>
+<script src="assets/js/jquery.desktop.js"></script>
+<script>
+  var _gaq = [['_setAccount', 'UA-166674-8'], ['_trackPageview']];
+
+  (function(d, t) {
+    var g = d.createElement(t),
+    s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = '//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+  })(this.document, 'script');
+</script>
+</body>
+</html>

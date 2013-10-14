@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/ask">
+    <Resource auth="Container"
+              driverClassName="oracle.jdbc.OracleDriver"
+              maxActive="20"
+              maxIdle="30"
+              maxWait="10000"
+              name="jdbc/askdb"
+              username="SYSTEM"
+              password="19890925"
+              type="javax.sql.DataSource"
+              url="jdbc:oracle:thin:@localhost:1521:XE"
+            />
+    <!--Ftp Server -->
+    <Resource name="ftp/askftp"
+              auth="Container"
+              type="oim.domain.FtpConnection"
+              factory="org.apache.naming.factory.BeanFactory"
+              ftpServerType="OIM_TEST"
+              server="localhost"
+              userName="ftp_user"
+              passWord="1q2w3e4r5t"
+              port="21"
+            />
+</Context>
